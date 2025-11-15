@@ -16,5 +16,5 @@ public abstract class User {
     private String firstName;
     private Date dateOfBirth;
     private String email;
-    private int phoneNumber;
+    private String phoneNumber;
 }

@@ -11,6 +11,6 @@ import lombok.Setter;
 public class Course {
     private int id;
     private String label;
-    private String credit;
+    private int credit;
     private Teacher teacher;
 }

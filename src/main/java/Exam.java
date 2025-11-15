@@ -3,7 +3,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -14,6 +14,6 @@ public class Exam {
     private int id;
     private String title;
     private Course course;
-    private Date examDate;
+    private LocalDateTime examDate;
     private int coefficient;
 }

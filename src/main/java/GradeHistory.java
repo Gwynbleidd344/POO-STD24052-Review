@@ -11,7 +11,7 @@ import java.time.Instant;
 @NoArgsConstructor
 
 public class GradeHistory {
-    private int newValue;
+    private double newValue;
     private Instant timeStamp;
     private String reason;
 }
