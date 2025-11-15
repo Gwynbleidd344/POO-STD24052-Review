@@ -2,6 +2,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.EqualsAndHashCode;
 
 import java.time.LocalDateTime;
 
@@ -9,11 +10,11 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
+@EqualsAndHashCode(of = "id")
 public class Exam {
     private int id;
     private String title;
     private Course course;
     private LocalDateTime examDate;
-    private int coefficient;
+    private double coefficient;
 }
