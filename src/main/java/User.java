@@ -1,21 +1,18 @@
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.EqualsAndHashCode;
+import lombok.AllArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
-@EqualsAndHashCode(of = "id")
 public abstract class User {
-    private int id;
-    private String lastName;
-    private String firstName;
-    private Date dateOfBirth;
-    private String email;
-    private String phoneNumber;
+
+    protected int id;
+    protected String lastName;
+    protected String firstName;
+    protected LocalDate birthDate;
+    protected String email;
+    protected String phoneNumber;
 }

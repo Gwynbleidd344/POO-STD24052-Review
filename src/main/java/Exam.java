@@ -1,20 +1,16 @@
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.EqualsAndHashCode;
+import lombok.AllArgsConstructor;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
-@EqualsAndHashCode(of = "id")
 public class Exam {
     private int id;
     private String title;
     private Course course;
-    private LocalDateTime examDate;
-    private double coefficient;
+    private Instant dateTime;
+    private int coefficient;
 }

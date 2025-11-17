@@ -1,17 +1,13 @@
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.EqualsAndHashCode;
+import lombok.AllArgsConstructor;
 
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
-@EqualsAndHashCode(of = "id")
 public class Course {
     private int id;
     private String label;
-    private int credit;
+    private int credits;
     private Teacher teacher;
 }

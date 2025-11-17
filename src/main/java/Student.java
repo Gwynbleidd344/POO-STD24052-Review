@@ -1,19 +1,18 @@
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Getter
 @Setter
-@NoArgsConstructor
-
 public class Student extends User {
+
     private String group;
     private Tutor tutor;
 
-    public Student(int id, String lastName, String firstName, Date dateOfBirth, String email, String phoneNumber, String group, Tutor tutor) {
-        super(id, lastName, firstName, dateOfBirth, email, phoneNumber);
+    public Student(int id, String lastName, String firstName, LocalDate birthDate,
+                   String email, String phoneNumber, String group, Tutor tutor) {
+        super(id, lastName, firstName, birthDate, email, phoneNumber);
         this.group = group;
         this.tutor = tutor;
     }

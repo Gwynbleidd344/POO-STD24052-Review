@@ -1,18 +1,17 @@
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 @Getter
 @Setter
-@NoArgsConstructor
+public class Tutor extends User {
 
-public class Tutor extends User{
-    private String relationship;
+    private String relationDescription;
 
-    public Tutor(int id, String lastName, String firstName, Date dateOfBirth, String email, String phoneNumber, String relationship) {
-        super(id, lastName, firstName, dateOfBirth, email, phoneNumber);
-        this.relationship = relationship;
+    public Tutor(int id, String lastName, String firstName, LocalDate birthDate,
+                 String email, String phoneNumber, String relationDescription) {
+        super(id, lastName, firstName, birthDate, email, phoneNumber);
+        this.relationDescription = relationDescription;
     }
 }
